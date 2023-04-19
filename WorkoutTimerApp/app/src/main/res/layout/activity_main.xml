@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/workout_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:text="00:00"/>
+
+    <EditText
+        android:id="@+id/workout_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workout_timer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:hint="Workout"
+        />
+
+    <TextView
+        android:id="@+id/rest_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workout_duration"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:text="00:00"/>
+
+    <EditText
+        android:id="@+id/rest_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_timer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:hint="Rest"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_duration"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="START"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="STOP"
+        android:textSize="22sp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/stop_button"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/circular_progress_bar"/>
+
+</RelativeLayout>
